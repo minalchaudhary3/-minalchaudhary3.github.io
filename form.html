@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="/css/form.-style.css">
 </head>
 <body>
 <div id="wrapper">
@@ -17,7 +18,7 @@
     </ul>
     </nav>
 
-    <header>
+    <header class="intro">
         <h1>Reserve Your Room</h1>
         <h2>Our reservation policies:</h2>
      </header>
@@ -86,8 +87,8 @@
 
 
 
-            <div>
-                <div>Ocean View (additional cost)</div>
+            <div class="radio">
+                <span>Ocean View (add'1 cost)</span>
                 <label for="yes">Yes</label>
                 <input type="radio" name="view" id="yes" value="yes" required>
                 <label for="no">No</label>
@@ -115,8 +116,9 @@
                     <input type="password" id="password" name="password" required>
                 </div>
                 <div>
-                    <input type="submit" value="Submit"> <br>
-                    <input type="reset" value="Reset">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+
                 </div>
 
                 <p>
