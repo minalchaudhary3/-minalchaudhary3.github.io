@@ -165,3 +165,167 @@ footer ul {
 footer p{
     clear: both;
 }
+
+/* Ipad layout (max-width: 810px) */
+@media (max-width: 810px) {
+
+  html {
+    font-size: 1.05rem;
+    line-height: 145%;
+  }
+
+  img {
+    max-width: 45%;
+    margin-left: 6%;
+    margin-right: 6%;
+    float: left;
+  }
+
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .details,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    width: 45%;
+    margin: 0 2%;
+  }
+
+  .details,
+  .instructions {
+    float: left;
+  }
+
+  .ingredients,
+  .nutrition {
+    float: right;
+  }
+
+  blockquote {
+    width: 280px;
+    height: 280px;
+    padding: 70px 25px 35px 25px;
+    border-radius: 50%;
+    background-color: #f3b96c;
+    outline: dotted 6px #c98226;
+    outline-offset: 10px;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 12px 0;
+    background-color: #c98226;
+    color: white;
+  }
+}
+
+
+
+/* Phone layout (max-width: 360px) */
+@media (max-width: 360px) {
+
+  html {
+    line-height: 140%;
+    font-size: 1rem;
+  }
+
+  nav a {
+    padding: 6px;
+    font-size: 0.9rem;
+    letter-spacing: normal;
+    
+  }
+  nav ul {
+    padding-left: 10px;;
+  }
+
+  main {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-shadow: none;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  img {
+    float: none;
+    max-width: 65%;
+    margin: 0 auto 25px auto;
+    display: block;
+  }
+
+  .rate {
+    font-size: 1rem;
+  }
+
+  .details,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    width: 90%;
+    float: none;
+    margin: 0 auto 10px auto;
+  }
+
+  
+  blockquote {
+    clear: both;
+    width: 240px;
+    height: 240px;
+    padding: 60px 25px 30px 25px;
+    border-radius: 50%;
+    background-color: #f3b96c;
+    outline: dotted 6px #c98226;
+    outline-offset: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: center;
+    margin: 25px auto;
+  }
+
+  blockquote small {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    font-size: 0.85rem;
+  }
+
+footer {
+  background-color: #c98226;
+  color: white;
+  text-align: center;
+  padding: 18px 0;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+
+
+  .col1,
+  .col2,
+  .col3 {
+    display: block;
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
