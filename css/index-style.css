@@ -15,12 +15,31 @@ h1, h2, h3 {
 
 h1 {
   font-size: 2.25rem;
+  opacity: 0%;
 }
+.fade-text {
+  animation: fadeTxt 3s ease 1s forwards;
+}
+
+@keyframes fadeTxt {
+    0% {
+       opacity: 0;
+       }
+    50% {
+       font-size: 2.75rem; 
+      }
+
+ 100% { opacity: 1;
+   font-size: 3.25rem; }
+}
+
+
 
 h2 {
   font-size: 1.8rem;
   text-decoration: none;
 }
+
 
 h2::before,
 h2::after {
@@ -29,6 +48,17 @@ h2::after {
 
 h3 {
   font-size: 1.5rem;
+}
+nav {
+  float: right;
+  position: sticky;
+  top: 0;
+   background-color:rgb(226, 181, 154);
+  width: 240px;
+}
+
+nav ul {
+  padding: 0;
 }
 
 nav li {
@@ -71,6 +101,35 @@ header p {
   font-size: 80%;
 }
 
+.fade-img {
+  opacity: 0;
+  animation: fadeImg 6s ease forwards;
+  display: block;
+  width: 65%;
+  margin: 20px auto;
+}
+
+@keyframes fadeImg {
+  0% { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    border-radius: 50%;
+    border: 6px solid rgb(226, 181, 154);
+  }
+}
+
+main,
+header {
+  width:60% ;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+
 .assignments li {
   list-style-type: none;
 }
@@ -95,7 +154,13 @@ footer {
   color: rgb(226, 181, 154);
   line-height: 1.2;
   font-weight: 200;
+  position: relative;
   
   border-top: 2px solid rgb(226, 181, 154); 
   
+}
+
+small{
+  float: right;
+  padding: 20px 0 40px 0;
 }
